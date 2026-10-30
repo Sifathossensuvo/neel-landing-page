@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-chalk font-sans text-neel-900 antialiased; }
+:focus-visible { outline: 3px solid #F5B700; outline-offset: 3px; border-radius: 6px; }
+::selection { background: #F5B700; color: #0F1A4A; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
